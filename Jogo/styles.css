@@ -15,15 +15,15 @@ h1{
 }
 .choices button{
     font-size: 7.5rem;
-    min-width: 60px;
+    min-width: 160px;
     margin: 0 10px;
-    border-radius: 250px;
-    background-color: hsl(44, 63%, 42%);
+    border-radius: 6px;
+    background-color: hsl(193, 79%, 66%);
     cursor: pointer;
     transition: background-color 0.5s ease;
 }
 .choices button:hover{
-    background-color: hsl(200, 100%, 70%);
+    background-color: hsl(193, 54%, 35%)
 }
 #playerDisplay, #computerDisplay{
     font-size: 2.5rem;
