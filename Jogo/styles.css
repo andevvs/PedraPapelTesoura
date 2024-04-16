@@ -1,5 +1,5 @@
 body{
-    font-family: Arial, sans-serif;
+    font-family: cascadia code, sans-serif;
     font-weight: bold;
     margin: 0;
     display: flex;
@@ -8,17 +8,17 @@ body{
 }
 h1{
     font-size: 3.5rem;
-    color: hsl(0, 0%, 20%);
+    color: hsl(0, 8%, 12%);
 }
 .choices{
     margin-bottom: 30px;
 }
 .choices button{
     font-size: 7.5rem;
-    min-width: 160px;
+    min-width: 60px;
     margin: 0 10px;
     border-radius: 250px;
-    background-color: hsl(200, 100%, 50%);
+    background-color: hsl(44, 63%, 42%);
     cursor: pointer;
     transition: background-color 0.5s ease;
 }
@@ -36,8 +36,8 @@ h1{
     font-size: 2rem;
 }
 .greenText, #playerScoreDisplay{
-    color: hsl(130, 84%, 54%);
+    color: hsl(130, 70%, 56%);
 }
 .redText, #computerScoreDisplay{
-    color: hsl(0, 84%, 60%);
+    color: hsl(0, 63%, 53%);
 }

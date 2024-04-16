@@ -1,4 +1,4 @@
-const choices = ["rock", "paper", "scissors"];
+const choices = ["pedra", "papel", "tesoura"];
 const playerDisplay = document.getElementById("playerDisplay");
 const computerDisplay = document.getElementById("computerDisplay");
 const resultDisplay = document.getElementById("resultDisplay");
@@ -13,35 +13,35 @@ function playGame(playerChoice){
     let result = "";
 
     if(playerChoice === computerChoice){
-        result = "IT'S A TIE!";
+        result = "EMPATE!";
     }
     else{
         switch(playerChoice){
-            case "rock":
-                result = (computerChoice === "scissors") ? "YOU WIN!" : "YOU LOSE!";
+            case "pedra":
+                result = (computerChoice === "tesoura") ? "VENCEU!" : "PERDEU!";
                 break;
-            case "paper":
-                result = (computerChoice === "rock") ? "YOU WIN!" : "YOU LOSE!";
+            case "papel":
+                result = (computerChoice === "pedra") ? "VENCEU!" : "PERDEU!";
                 break;
-            case "scissors":
-                result = (computerChoice === "paper") ? "YOU WIN!" : "YOU LOSE!";
+            case "tesoura":
+                result = (computerChoice === "papel") ? "VENCEU!" : "PERDEU!";
                 break;
         }
     }
 
-    playerDisplay.textContent = `PLAYER: ${playerChoice}`;
-    computerDisplay.textContent = `Computer: ${computerChoice}`;
+    playerDisplay.textContent = `JOGADOR: ${playerChoice}`;
+    computerDisplay.textContent = `Computador: ${computerChoice}`;
     resultDisplay.textContent = result;
 
     resultDisplay.classList.remove("greenText", "redText");
 
     switch(result){
-        case "YOU WIN!":
+        case "VENCEU!":
             resultDisplay.classList.add("greenText");
             playerScore++;
             playerScoreDisplay.textContent = playerScore;
             break;
-        case "YOU LOSE!":
+        case "PERDEU!":
             resultDisplay.classList.add("redText");
             computerScore++;
             computerScoreDisplay.textContent = computerScore;
