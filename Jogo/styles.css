@@ -18,12 +18,12 @@ h1{
     min-width: 160px;
     margin: 0 10px;
     border-radius: 6px;
-    background-color: hsl(193, 79%, 66%);
+    background-color: #B9B4C7;
     cursor: pointer;
     transition: background-color 0.5s ease;
 }
 .choices button:hover{
-    background-color: hsl(193, 54%, 35%)
+    background-color: hsl(0, 0%, 98%)
 }
 #playerDisplay, #computerDisplay{
     font-size: 2.5rem;
